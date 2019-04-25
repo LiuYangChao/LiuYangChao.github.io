@@ -96,20 +96,20 @@
 
 
 
-  <meta name="description" content="总述阿里巴巴的日志采集体系：  Web端日志采集方案（Aplus.JS，基于浏览器） APP端（UserTrack，无线客户端）  Web端方案日志采集分类 页面展现类型日志采集页面浏览量（Page View, PV）+访客数（Unique Visitors, UV） 页面交互类型日志采集页面渲染完成之后，采集用户在页面上执行的各种操作  日志采集流程Web端页面请求流程：Http请求流程中的步骤">
+  <meta name="description" content="总述阿里巴巴的日志采集体系：  Web端日志采集方案（Aplus.JS，基于浏览器） APP端（UserTrack，无线客户端）  Web端方案日志采集分类 页面展现类型日志采集页面浏览量（Page View, PV）+访客数（Unique Visitors, UV） 页面交互类型日志采集页面渲染完成之后，采集用户在页面上执行的各种操作">
 <meta name="keywords" content="阿里大数据之路,读书笔记">
 <meta property="og:type" content="article">
 <meta property="og:title" content="阿里大数据之路-2日志采集">
 <meta property="og:url" content="http://yoursite.com/2019/04/22/阿里大数据之路-2日志采集/index.html">
 <meta property="og:site_name" content="落香无情春不再">
-<meta property="og:description" content="总述阿里巴巴的日志采集体系：  Web端日志采集方案（Aplus.JS，基于浏览器） APP端（UserTrack，无线客户端）  Web端方案日志采集分类 页面展现类型日志采集页面浏览量（Page View, PV）+访客数（Unique Visitors, UV） 页面交互类型日志采集页面渲染完成之后，采集用户在页面上执行的各种操作  日志采集流程Web端页面请求流程：Http请求流程中的步骤">
+<meta property="og:description" content="总述阿里巴巴的日志采集体系：  Web端日志采集方案（Aplus.JS，基于浏览器） APP端（UserTrack，无线客户端）  Web端方案日志采集分类 页面展现类型日志采集页面浏览量（Page View, PV）+访客数（Unique Visitors, UV） 页面交互类型日志采集页面渲染完成之后，采集用户在页面上执行的各种操作">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://i2.bvimg.com/684670/eff1e80ef69a2ecb.png">
 <meta property="og:image" content="http://i2.bvimg.com/684670/eb2b35c52d2f3591.png">
-<meta property="og:updated_time" content="2019-04-22T14:41:04.555Z">
+<meta property="og:updated_time" content="2019-04-25T10:44:27.987Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="阿里大数据之路-2日志采集">
-<meta name="twitter:description" content="总述阿里巴巴的日志采集体系：  Web端日志采集方案（Aplus.JS，基于浏览器） APP端（UserTrack，无线客户端）  Web端方案日志采集分类 页面展现类型日志采集页面浏览量（Page View, PV）+访客数（Unique Visitors, UV） 页面交互类型日志采集页面渲染完成之后，采集用户在页面上执行的各种操作  日志采集流程Web端页面请求流程：Http请求流程中的步骤">
+<meta name="twitter:description" content="总述阿里巴巴的日志采集体系：  Web端日志采集方案（Aplus.JS，基于浏览器） APP端（UserTrack，无线客户端）  Web端方案日志采集分类 页面展现类型日志采集页面浏览量（Page View, PV）+访客数（Unique Visitors, UV） 页面交互类型日志采集页面渲染完成之后，采集用户在页面上执行的各种操作">
 <meta name="twitter:image" content="http://i2.bvimg.com/684670/eff1e80ef69a2ecb.png">
 
 
@@ -391,12 +391,24 @@
                 
               
 
-              <time title="创建时间：2019-04-22 21:16:12 / 修改时间：22:41:04" itemprop="dateCreated datePublished" datetime="2019-04-22T21:16:12+08:00">2019-04-22</time>
+              <time title="创建时间：2019-04-22 21:16:12" itemprop="dateCreated datePublished" datetime="2019-04-22T21:16:12+08:00">2019-04-22</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-04-25 18:44:27" itemprop="dateModified" datetime="2019-04-25T18:44:27+08:00">2019-04-25</time>
               
             
           </span>
@@ -437,7 +449,8 @@
 </ol>
 <h4 id="Web端方案"><a href="#Web端方案" class="headerlink" title="Web端方案"></a>Web端方案</h4><h5 id="日志采集分类"><a href="#日志采集分类" class="headerlink" title="日志采集分类"></a>日志采集分类</h5><ol>
 <li>页面展现类型日志采集<br>页面浏览量（Page View, PV）+访客数（Unique Visitors, UV）</li>
-<li>页面交互类型日志采集<br>页面渲染完成之后，采集用户在页面上执行的各种操作</li>
+<li>页面交互类型日志采集<br>页面渲染完成之后，采集用户在页面上执行的各种操作<a id="more"></a>
+</li>
 </ol>
 <h5 id="日志采集流程"><a href="#日志采集流程" class="headerlink" title="日志采集流程"></a>日志采集流程</h5><p><img src="http://i2.bvimg.com/684670/eff1e80ef69a2ecb.png" alt="Markdown"><br>Web端页面请求流程：<br>Http请求流程中的步骤1-3都是在页面渲染之前，日志采集无法干预，我们能做的就是在第四步的时候进行采集。主要是在页面中（HTML）植入JS脚本，脚本被浏览器加载解析后执行，采集当前页面参数，浏览的上下页面以及其他运行环境（如浏览器，分辨率等）。可以在服务器响应的时候自动注入JS脚本，也可以在编写HTML页面的时候由开发人员代码注入。阿里更推荐第一种。<br>日志上传+收集：<br>客户端执行脚本时会向服务器发起一个日志请求，以便将日志发送到服务器。服务器接收到日志请求时，先向浏览器发回一个请求成功的响应，然后把日志写入缓冲区（收集过程）。最后服务器端要有一个解析存档的过程，按照日志的存储顺序进行逻辑处理。<br><img src="http://i2.bvimg.com/684670/eb2b35c52d2f3591.png" alt="Markdown"></p>
 <h5 id="交互式日志采集"><a href="#交互式日志采集" class="headerlink" title="交互式日志采集"></a>交互式日志采集</h5><p>交互式行为包括用户鼠标的移动，页面前后页跳转，鼠标停留时间等。没有固定的规则，一切根据业务而定。<br>阿里提供了一个“黄金令箭”模块，基于HTTP协议的日志服务。需要先绑定业务模块，然后将采集代码植入页面并将页面与业务行为代码绑定，最后用户在页面上操作的时候便会触发业务代码进行统计。</p>
@@ -493,6 +506,22 @@
       
       
 
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/24/Java多线程（一）基础概念/" rel="prev" title="Java多线程（一）基础概念">
+                Java多线程（一）基础概念 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
@@ -558,7 +587,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-count">2</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -581,7 +610,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
